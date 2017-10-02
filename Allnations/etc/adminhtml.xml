@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <novapc_allnations translate="title" module="novapc_allnations">
+                                        <title>Allnations</title>
+                                        <sort_order>999</sort_order>
+                                    </novapc_allnations>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <novapc_allnations translate="title" module="novapc_allnations">
+            <title>All Nations</title>
+            <sort_order>710</sort_order>
+            <children>
+                <integration translate="title" module="novapc_allnations">
+                    <title>Integrar produtos</title>
+                    <action>adminhtml/allnations_integration</action>
+                    <sort_order>1</sort_order>
+                </integration>
+                <orders translate="title" module="novapc_allnations">
+                    <title>Pedidos</title>
+                    <action>adminhtml/allnations_order</action>
+                    <sort_order>2</sort_order>
+                </orders>
+                <promotion translate="title" module="novapc_allnations">
+                    <title>Promoções</title>
+                    <action>adminhtml/allnations_promotion</action>
+                    <sort_order>3</sort_order>
+                </promotion>
+                <allnations_configuration translate="title" module="novapc_allnations">
+                    <title>Configuração</title>
+                    <sort_order>4</sort_order>
+                    <action>adminhtml/system_config/edit/section/allnations/</action>
+                </allnations_configuration>
+            </children>
+        </novapc_allnations>
+    </menu>
+</config>

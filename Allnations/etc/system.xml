@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <tabs>
+        <allnations translate="label" module="novapc_allnations">
+            <label>All Nations</label>
+            <sort_order>798</sort_order>
+        </allnations>
+    </tabs>
+    <sections>
+        <allnations translate="label" module="novapc_allnations">
+            <label>Configuração</label>
+            <tab>allnations</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>50</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <novapc_information_group translate="label" module="novapc_allnations">
+                    <label>Important informations</label>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>
+                        <![CDATA[
+                            <div>
+                                <h3>v. 0.1.0 Developed by<br> NovaPC - Tecnologia da Informação.</h3>
+                                <img src="http://novapc.com.br/images/logo.png" alt="Smiley face" height="200" width="300">
+                                <br>
+                                <br>
+                                Site: <a href="http://www.novapc.com.br/" target="_blank">www.novapc.com.br</a>
+                                <br>
+                                E-mail: novapc@novapc.com.br
+                                <br>
+                                Telefone: (14) 2104-5600
+                                <br>
+                                <hr>
+                                <br>
+                            </div>
+                        ]]>
+                    </comment>
+                </novapc_information_group>
+                <general translate="label" module="novapc_allnations">
+                    <label>General</label>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <api_user translate="label">
+                            <label>Login da All Nations</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_user>
+                        <api_password translate="label">
+                            <label>Senha da All Nations</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_password>
+                        <id_allnations translate="label">
+                            <label>ID do produto na All Nations</label>
+                            <comment>Atributo que representa o ID do produto na All Nations</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </id_allnations>
+                        <category_allnations translate="label">
+                            <label>Selecione onde as novas categorias devem ser criadas</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>novapc_allnations/system_config_source_dropdown_category</source_model>
+                        </category_allnations>
+                    </fields>
+                </general>
+                <attributes translate="label" module="novapc_allnations">
+                    <label>Mapeamento de Campos</label>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <fabricante translate="label" module="novapc_allnations">
+                            <label>Fabricante</label>
+                            <comment>Atributo que representa o fabricante do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>10</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </fabricante>
+                        <part_number>
+                            <label>PartNumber</label>
+                            <comment>PartNumber identificador do produto</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>30</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </part_number>
+                        <ean translate="label" module="novapc_allnations">
+                            <label>EAN</label>
+                            <comment>Atributo que representa o EAN do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>40</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </ean>
+                        <garantia translate="label" module="novapc_allnations">
+                            <label>Garantia (em meses)</label>
+                            <comment>Atributo que representa a garantia, em meses, do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>50</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </garantia>
+                        <peso translate="label" module="novapc_allnations">
+                            <label>Peso (kg)</label>
+                            <comment>Atributo que representa o peso, em quilogramas, do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>60</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </peso>
+                        <preco_revenda translate="label" module="novapc_allnations">
+                            <label>Preço da All Nations para revenda</label>
+                            <comment>Atributo que representa o preço da All Nations para revenda do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>70</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </preco_revenda>
+                        <preco_sem_st translate="label" module="novapc_allnations">
+                            <label>Preço sem Substituição Tributaria</label>
+                            <comment>Atributo que representa o preço sem substituição tributaria.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>80</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </preco_sem_st>
+                        <ncm translate="label" module="novapc_allnations">
+                            <label>NCM</label>
+                            <comment>Atributo que representa o NCM do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>90</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </ncm>
+                        <largura translate="label" module="novapc_allnations">
+                            <label>Largura, em metros</label>
+                            <comment>Atributo que representa a largura, em centimetros, do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>100</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </largura>
+                        <altura translate="label" module="novapc_allnations">
+                            <label>Altura, em metros</label>
+                            <comment>Atributo que representa a altura, em centimetros, do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>110</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </altura>
+                        <profundidade translate="label" module="novapc_allnations">
+                            <label>Profundidade, em metros</label>
+                            <comment>Atributo que representa a profundidade, em centimetros, do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>120</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </profundidade>
+                        <subst_tributaria translate="label" module="novapc_allnations">
+                            <label>Substituição tributaria</label>
+                            <comment>Atributo que representa se o produto incide ICMS ST ou não.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>120</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </subst_tributaria>
+                        <origem_produto translate="label" module="novapc_allnations">
+                            <label>Origem do Produto</label>
+                            <comment>Atributo que representa a origem do produto.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>140</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_attributes</source_model>
+                        </origem_produto>
+                    </fields>
+                </attributes>
+                <allnationsorders translate="label" module="novapc_allnations">
+                    <label>Configuração de Pedidos</label>
+                    <sort_order>300</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <usarfatdir translate="label" module="novapc_allnations">
+                            <label>Usar faturamento direto:</label>
+                            <comment>Deseja usar faturamento direto?</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>60</show_in_store>
+                            <sort_order>0</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </usarfatdir>
+                        <confirmstatus translate="label" module="novapc_allnations">
+                            <label>Confirmar pedido no status:</label>
+                            <comment>Status que deseja que as reservas sejam confirmadas</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>2</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>novapc_allnations/system_config_source_dropdown_status</source_model>
+                        </confirmstatus>
+                        <cnpj translate="label" module="novapc_allnations">
+                            <label>CNPJ:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cnpj>
+                    </fields>
+                </allnationsorders>
+            </groups>
+        </allnations>
+    </sections>
+</config>
